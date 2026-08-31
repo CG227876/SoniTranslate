@@ -1504,7 +1504,7 @@ def create_gui(theme, logs_in_gui=False):
                     )
                     TRANSLATE_AUDIO_TO = gr.Dropdown(
                         LANGUAGES_LIST[1:],
-                        value="English (en)",
+                        value="Tagalog (tl)",
                         label=lg_conf["tat_label"],
                         info=lg_conf["tat_info"],
                     )
@@ -1522,9 +1522,9 @@ def create_gui(theme, logs_in_gui=False):
                         visible=False,
                     )
                     max_speakers = gr.Slider(
-                        1,
+                        12,
                         MAX_TTS,
-                        value=2,
+                        value=12,
                         step=1,
                         label=lg_conf["max_sk"],
                     )
@@ -1539,84 +1539,84 @@ def create_gui(theme, logs_in_gui=False):
 
                     tts_voice00 = gr.Dropdown(
                         SoniTr.tts_info.tts_list(),
-                        value="en-US-EmmaMultilingualNeural-Female",
+                        value="fil-PH-BlessicaNeural-Female",
                         label=lg_conf["sk1"],
                         visible=True,
                         interactive=True,
                     )
                     tts_voice01 = gr.Dropdown(
                         SoniTr.tts_info.tts_list(),
-                        value="en-US-AndrewMultilingualNeural-Male",
+                        value="fil-PH-BlessicaNeural-Female",
                         label=lg_conf["sk2"],
                         visible=True,
                         interactive=True,
                     )
                     tts_voice02 = gr.Dropdown(
                         SoniTr.tts_info.tts_list(),
-                        value="en-US-AvaMultilingualNeural-Female",
+                        value="fil-PH-BlessicaNeural-Female",
                         label=lg_conf["sk3"],
                         visible=False,
                         interactive=True,
                     )
                     tts_voice03 = gr.Dropdown(
                         SoniTr.tts_info.tts_list(),
-                        value="en-US-BrianMultilingualNeural-Male",
+                        value="fil-PH-BlessicaNeural-Female",
                         label=lg_conf["sk4"],
                         visible=False,
                         interactive=True,
                     )
                     tts_voice04 = gr.Dropdown(
                         SoniTr.tts_info.tts_list(),
-                        value="de-DE-SeraphinaMultilingualNeural-Female",
+                        value="fil-PH-BlessicaNeural-Female",
                         label=lg_conf["sk4"],
                         visible=False,
                         interactive=True,
                     )
                     tts_voice05 = gr.Dropdown(
                         SoniTr.tts_info.tts_list(),
-                        value="de-DE-FlorianMultilingualNeural-Male",
+                        value="fil-PH-BlessicaNeural-Female",
                         label=lg_conf["sk6"],
                         visible=False,
                         interactive=True,
                     )
                     tts_voice06 = gr.Dropdown(
                         SoniTr.tts_info.tts_list(),
-                        value="fr-FR-VivienneMultilingualNeural-Female",
+                        value="fil-PH-BlessicaNeural-Female",
                         label=lg_conf["sk7"],
                         visible=False,
                         interactive=True,
                     )
                     tts_voice07 = gr.Dropdown(
                         SoniTr.tts_info.tts_list(),
-                        value="fr-FR-RemyMultilingualNeural-Male",
+                        value="fil-PH-BlessicaNeural-Female",
                         label=lg_conf["sk8"],
                         visible=False,
                         interactive=True,
                     )
                     tts_voice08 = gr.Dropdown(
                         SoniTr.tts_info.tts_list(),
-                        value="en-US-EmmaMultilingualNeural-Female",
+                        value="fil-PH-BlessicaNeural-Female",
                         label=lg_conf["sk9"],
                         visible=False,
                         interactive=True,
                     )
                     tts_voice09 = gr.Dropdown(
                         SoniTr.tts_info.tts_list(),
-                        value="en-US-AndrewMultilingualNeural-Male",
+                        value="fil-PH-BlessicaNeural-Female",
                         label=lg_conf["sk10"],
                         visible=False,
                         interactive=True,
                     )
                     tts_voice10 = gr.Dropdown(
                         SoniTr.tts_info.tts_list(),
-                        value="en-US-EmmaMultilingualNeural-Female",
+                        value="fil-PH-BlessicaNeural-Female",
                         label=lg_conf["sk11"],
                         visible=False,
                         interactive=True,
                     )
                     tts_voice11 = gr.Dropdown(
                         SoniTr.tts_info.tts_list(),
-                        value="en-US-AndrewMultilingualNeural-Male",
+                        value="fil-PH-BlessicaNeural-Female",
                         label=lg_conf["sk12"],
                         visible=False,
                         interactive=True,
@@ -1647,7 +1647,7 @@ def create_gui(theme, logs_in_gui=False):
                         ):
                             gr.Markdown(lg_conf["vc_subtitle"])
                             voice_imitation_gui = gr.Checkbox(
-                                False,
+                                True,
                                 label=lg_conf["vc_active_label"],
                                 info=lg_conf["vc_active_info"],
                             )
@@ -1740,7 +1740,7 @@ def create_gui(theme, logs_in_gui=False):
                         ):
                             audio_accelerate = gr.Slider(
                                 label=lg_conf["acc_max_label"],
-                                value=1.9,
+                                value=1.1,
                                 step=0.1,
                                 minimum=1.0,
                                 maximum=2.5,
@@ -1774,7 +1774,7 @@ def create_gui(theme, logs_in_gui=False):
                             volume_original_mix = gr.Slider(
                                 label=lg_conf["vol_ori"],
                                 info="for Adjusting volumes and mixing audio",
-                                value=0.25,
+                                value=2.50,
                                 step=0.05,
                                 minimum=0.0,
                                 maximum=2.50,
@@ -1784,7 +1784,7 @@ def create_gui(theme, logs_in_gui=False):
                             volume_translated_mix = gr.Slider(
                                 label=lg_conf["vol_tra"],
                                 info="for Adjusting volumes and mixing audio",
-                                value=1.80,
+                                value=2.50,
                                 step=0.05,
                                 minimum=0.0,
                                 maximum=2.50,
@@ -1792,6 +1792,7 @@ def create_gui(theme, logs_in_gui=False):
                                 interactive=True,
                             )
                             main_voiceless_track = gr.Checkbox(
+                                True,
                                 label=lg_conf["voiceless_tk_label"],
                                 info=lg_conf["voiceless_tk_info"],
                             )
