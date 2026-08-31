@@ -1524,7 +1524,7 @@ def create_gui(theme, logs_in_gui=False):
                     max_speakers = gr.Slider(
                         1,
                         MAX_TTS,
-                        value=2,
+                        value=12,
                         step=1,
                         label=lg_conf["max_sk"],
                     )
