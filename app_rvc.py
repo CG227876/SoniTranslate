@@ -1514,17 +1514,17 @@ def create_gui(theme, logs_in_gui=False):
                     gr.Markdown(lg_conf["num_speakers"])
                     MAX_TTS = 12
                     min_speakers = gr.Slider(
-                        12,
+                        1,
                         MAX_TTS,
-                        value=12,
+                        value=1,
                         label=lg_conf["min_sk"],
                         step=1,
                         visible=False,
                     )
                     max_speakers = gr.Slider(
-                        12,
+                        1,
                         MAX_TTS,
-                        value=12,
+                        value=2,
                         step=1,
                         label=lg_conf["max_sk"],
                     )
