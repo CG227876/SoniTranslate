@@ -1555,70 +1555,70 @@ def create_gui(theme, logs_in_gui=False):
                         SoniTr.tts_info.tts_list(),
                         value="fil-PH-BlessicaNeural-Female",
                         label=lg_conf["sk3"],
-                        visible=False,
+                        visible=True,
                         interactive=True,
                     )
                     tts_voice03 = gr.Dropdown(
                         SoniTr.tts_info.tts_list(),
                         value="fil-PH-BlessicaNeural-Female",
                         label=lg_conf["sk4"],
-                        visible=False,
+                        visible=True,
                         interactive=True,
                     )
                     tts_voice04 = gr.Dropdown(
                         SoniTr.tts_info.tts_list(),
                         value="fil-PH-BlessicaNeural-Female",
                         label=lg_conf["sk4"],
-                        visible=False,
+                        visible=True,
                         interactive=True,
                     )
                     tts_voice05 = gr.Dropdown(
                         SoniTr.tts_info.tts_list(),
                         value="fil-PH-BlessicaNeural-Female",
                         label=lg_conf["sk6"],
-                        visible=False,
+                        visible=True,
                         interactive=True,
                     )
                     tts_voice06 = gr.Dropdown(
                         SoniTr.tts_info.tts_list(),
                         value="fil-PH-BlessicaNeural-Female",
                         label=lg_conf["sk7"],
-                        visible=False,
+                        visible=True,
                         interactive=True,
                     )
                     tts_voice07 = gr.Dropdown(
                         SoniTr.tts_info.tts_list(),
                         value="fil-PH-BlessicaNeural-Female",
                         label=lg_conf["sk8"],
-                        visible=False,
+                        visible=True,
                         interactive=True,
                     )
                     tts_voice08 = gr.Dropdown(
                         SoniTr.tts_info.tts_list(),
                         value="fil-PH-BlessicaNeural-Female",
                         label=lg_conf["sk9"],
-                        visible=False,
+                        visible=True,
                         interactive=True,
                     )
                     tts_voice09 = gr.Dropdown(
                         SoniTr.tts_info.tts_list(),
                         value="fil-PH-BlessicaNeural-Female",
                         label=lg_conf["sk10"],
-                        visible=False,
+                        visible=True,
                         interactive=True,
                     )
                     tts_voice10 = gr.Dropdown(
                         SoniTr.tts_info.tts_list(),
                         value="fil-PH-BlessicaNeural-Female",
                         label=lg_conf["sk11"],
-                        visible=False,
+                        visible=True,
                         interactive=True,
                     )
                     tts_voice11 = gr.Dropdown(
                         SoniTr.tts_info.tts_list(),
                         value="fil-PH-BlessicaNeural-Female",
                         label=lg_conf["sk12"],
-                        visible=False,
+                        visible=True,
                         interactive=True,
                     )
                     max_speakers.change(
