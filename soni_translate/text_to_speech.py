@@ -1161,8 +1161,8 @@ def accelerate_segments(
 
         if acc_percentage > max_accelerate_audio:
             acc_percentage = max_accelerate_audio
-        elif acc_percentage < 1.0:
-            acc_percentage = 1.0
+        elif acc_percentage < 1.1:
+            acc_percentage = 1.1
 
         # Round
         acc_percentage = round(acc_percentage + 0.0, 1)
