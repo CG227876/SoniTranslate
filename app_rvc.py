@@ -1740,7 +1740,7 @@ def create_gui(theme, logs_in_gui=False):
                         ):
                             audio_accelerate = gr.Slider(
                                 label=lg_conf["acc_max_label"],
-                                value=1.2,
+                                value=1.3,
                                 step=0.1,
                                 minimum=1.0,
                                 maximum=2.5,
