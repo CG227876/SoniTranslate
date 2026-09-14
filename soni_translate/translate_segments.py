@@ -58,7 +58,6 @@ def translate_iterative(segments, target, source=None):
 
     for line in tqdm(range(len(segments_))):
         text = segments_[line]["text"]
-        time.sleep(2)
         translated_line = translator.translate(text.strip())
         segments_[line]["text"] = translated_line
 
@@ -162,7 +161,6 @@ def translate_batch(segments, target, chunk_size=2000, source=None):
     split_list = []
     try:
         for text, text_iterable in zip(text_merge, global_text_list):
-            time.sleep(2)
             translated_line = translator.translate(text.strip())
             split_text = translated_line.split("|||||")
             if len(split_text) == len(text_iterable):
@@ -174,7 +172,6 @@ def translate_batch(segments, target, chunk_size=2000, source=None):
                 )
                 split_text = []
                 for txt_iter in text_iterable:
-                    time.sleep(2)
                     translated_txt = translator.translate(txt_iter.strip())
                     split_text.append(translated_txt)
                     progress_bar.update(1)
@@ -408,7 +405,6 @@ def gpt_batch(segments, model, target, token_batch_limit=900, source=None):
                 )
 
                 for txt_source in batch_conversation["conversation"]:
-                    time.sleep(2)
                     translated_txt = translator.translate(
                         list(txt_source.values())[0].strip()
                     )
