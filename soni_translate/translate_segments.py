@@ -161,7 +161,6 @@ def translate_batch(segments, target, chunk_size=2000, source=None):
     split_list = []
     try:
         for text, text_iterable in zip(text_merge, global_text_list):
-            time.sleep(0.25)
             translated_line = translator.translate(text.strip())
             split_text = translated_line.split("|||||")
             if len(split_text) == len(text_iterable):
@@ -423,7 +422,7 @@ def translate_text(
     segments,
     target,
     translation_process="google_translator_batch",
-    chunk_size=2000,
+    chunk_size=4500,
     source=None,
     token_batch_limit=1000,
 ):
